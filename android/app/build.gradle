@@ -1,0 +1,97 @@
+plugins {
+    id "com.android.application"
+    id 'com.google.gms.google-services'
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace = "com.example.attendance_panel"
+    compileSdkVersion 33 // Updated for Java 17 compatibility
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = '17' // Updated for Java 17 compatibility
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    defaultConfig {
+        applicationId = "com.example.attendance_panel"
+        minSdkVersion 23
+        targetSdkVersion 33 // Updated for Java 17 compatibility
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}
+
+
+
+
+// plugins {
+//     id "com.android.application"
+//     id 'com.google.gms.google-services'    // Firebase
+//     id "kotlin-android"
+//     id "dev.flutter.flutter-gradle-plugin"
+// }
+
+// android {
+//     namespace = "com.example.attendance_panel"
+//     compileSdk = flutter.compileSdkVersion
+//     ndkVersion = flutter.ndkVersion
+
+//     compileOptions {
+//         sourceCompatibility = JavaVersion.VERSION_1_8
+//         targetCompatibility = JavaVersion.VERSION_1_8
+//     }
+
+//     kotlinOptions {
+//         jvmTarget = JavaVersion.VERSION_1_8
+//     }
+
+//     defaultConfig {
+//         applicationId = "com.example.attendance_panel"
+//         minSdkVersion 23
+//         targetSdk = flutter.targetSdkVersion
+//         versionCode = flutter.versionCode
+//         versionName = flutter.versionName
+
+//         // Enable multidex if required
+//         multiDexEnabled true
+//     }
+
+//     buildTypes {
+//         release {
+//             shrinkResources true     // Reduces APK size by removing unused resources
+//             minifyEnabled true       // Enables code shrinking for better optimization
+//             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//             signingConfig = signingConfigs.debug
+//         }
+//     }
+// }
+
+// flutter {
+//     source = "../.."
+// }
+
+// dependencies {
+//     implementation 'androidx.multidex:multidex:2.0.1'  // Required for multidex support
+// }

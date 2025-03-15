@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "221902786162",
+    "project_id": "coin-2ff5f",
+    "storage_bucket": "coin-2ff5f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:221902786162:android:d44ab74c03722e1a127ceb",
+        "android_client_info": {
+          "package_name": "com.example.attendance_panel"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbN03W-6hE7DyeyXEfGsq4rMVlq-DI1ds"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:221902786162:android:f64bbe0c42742b27127ceb",
+        "android_client_info": {
+          "package_name": "com.example.chat_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbN03W-6hE7DyeyXEfGsq4rMVlq-DI1ds"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:221902786162:android:87066a7b8247ff3d127ceb",
+        "android_client_info": {
+          "package_name": "com.example.digitalcoin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbN03W-6hE7DyeyXEfGsq4rMVlq-DI1ds"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
